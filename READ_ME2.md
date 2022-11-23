@@ -14,3 +14,4 @@
 - 2. <strong>문장 슬라이드하기</strong>로 변수 초기화 문장을 변수 값 누적 코드 바로 앞으로 옮긴다.
 - 3. <strong>함수 추출하기</strong>로 적립 포인트 계산 부분을 별도 함수로 추출한다.
 - 4. <strong>변수 인라인하기</strong>로 volumeCredits 변수를 제거한다.
+- 4. <strong>반복문을 파이프라인으로 바꾸기</strong>
