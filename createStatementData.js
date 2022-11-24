@@ -1,3 +1,7 @@
+function createPerformanceCalculator(aPerformance, aPlay) {
+    return new PerformanceCalculator(aPerformance, aPlay);
+}
+
 class PerformanceCalculator {
 
     constructor(aPerformance, aPlay) {
@@ -45,7 +49,8 @@ export default function createStatementData(invoice, plays) {
     return result;
 
     function enrichPerformance(aPerformance) {
-        const calculator = new PerformanceCalculator(aPerformance, playFor(aPerformance));
+        const calculator = createPerformanceCalculator(aPerformance, playFor(aPerformance));
+            // new PerformanceCalculator(aPerformance, playFor(aPerformance));
         const result = Object.assign({}, aPerformance);
         result.play = calculator.play; // 중간 데이터에 연극 정보를 저장
         result.amount = calculator.amount; // 중간 데이터에 연극 정보를 저장
